@@ -16,7 +16,7 @@ public class Vendedor {
     
     public Vendedor(String n, int e, double sMinimo, int nAutos){
         nombres = n;
-        edad = e;
+        edad = E;
         salarioMinimo = sMinimo;
         establecerNumeroAutos(nAutos);
         comisionPorAuto = 150;

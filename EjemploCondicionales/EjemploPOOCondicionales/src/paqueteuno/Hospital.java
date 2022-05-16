@@ -48,6 +48,8 @@ public class Hospital {
         ciudadHospital = ciudad;
         presupuestoAnual = presupueto;
     }
+    //To string
+    
     // métodos establecer para asignar valores a 
     // cada atributo
     public void establecerNombreHospital(String n){
@@ -93,7 +95,21 @@ public class Hospital {
         return presupuestoAnual;
     }
     
-    
+    //To string
+     public String toString(){
+         String cadena = String.format("Datos Hospital\n"
+                            + "Nombre del hospital: %s\n"
+                            + "Ciudad del hospital: %s\n"
+                            + "Número de camas: %d\n"
+                            + "Número de doctores: %d\n"
+                            + "Presupuesto anual: %.2f\n",
+                            obtenerNombreHospital(),
+                            obtenerCiudadHospital(),
+                            obtenerNumeroCamas(),
+                            obtenerNumeroDoctores(),
+                            obtenerPresupuestoAnual());
+         return cadena;
+     }
     
     
 }

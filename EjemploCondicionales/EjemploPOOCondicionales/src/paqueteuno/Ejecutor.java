@@ -107,7 +107,7 @@ public class Ejecutor {
                             numeroDeDoctores,
                             presupuestoAnio);
 
-                    System.out.printf("Datos Hospital\n"
+                  /*System.out.printf("Datos Hospital\n"
                             + "Nombre del hospital: %s\n"
                             + "Ciudad del hospital: %s\n"
                             + "Número de camas: %d\n"
@@ -117,7 +117,7 @@ public class Ejecutor {
                             hosp3.obtenerCiudadHospital(),
                             hosp3.obtenerNumeroCamas(),
                             hosp3.obtenerNumeroDoctores(),
-                            hosp3.obtenerPresupuestoAnual());
+                            hosp3.obtenerPresupuestoAnual());*/
                 } else {
                     System.out.println("Opción fuera de rango");
                 }
