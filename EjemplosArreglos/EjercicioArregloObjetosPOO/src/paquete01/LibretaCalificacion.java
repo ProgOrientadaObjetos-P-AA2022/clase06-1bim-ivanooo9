@@ -104,14 +104,18 @@ public class LibretaCalificacion {
         
         for (int i = 0; i < obtenerCalificaciones().length; i++) {
             cadena = String.format("%s\t\t%s [%.2f] - %s - %s\n", cadena, 
-                    obtenerCalificaciones()[i].obtenerNombreMateria(),
-                    obtenerCalificaciones()[i].obtenerNota(),
-                    obtenerCalificaciones()[i].obtenerProfesor().obtenerNombre(),
-                    obtenerCalificaciones()[i].obtenerProfesor().obtenerTipo());
+                    obtenerCalificaciones()[i].obtenerNombreMateria(), //2
+                    obtenerCalificaciones()[i].obtenerNota(), //3
+                    obtenerCalificaciones()[i].obtenerProfesor().obtenerNombre(),//4
+                    // [obj.Calificacion]
+                    //[obj.profesor]
+                    obtenerCalificaciones()[i].obtenerProfesor().obtenerTipo()); //5
         }
         cadena = String.format("%sPromedio calificaciones: %.2f\n"
                 + "Promedio cualitativo: %s\n",  
-                cadena, obtenerPromedio(), obtenerPromedioCualitativo());
+                cadena, 
+                obtenerPromedio(),
+                obtenerPromedioCualitativo());
         return cadena;
     }
 }
